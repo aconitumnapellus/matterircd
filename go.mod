@@ -1,4 +1,4 @@
-module github.com/42wim/matterircd
+module github.com/aconitumnapellus/matterircd
 
 require (
 	github.com/davecgh/go-spew v1.1.1
