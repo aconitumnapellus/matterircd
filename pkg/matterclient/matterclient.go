@@ -77,7 +77,7 @@ type Client struct {
 	lastPong    time.Time
 }
 
-func New(login string, pass string, team string, server string) *Client {
+func New(login string, pass string, team string, server string, mfatoken string) *Client {
 	rootLogger := logrus.New()
 	rootLogger.SetFormatter(&prefixed.TextFormatter{
 		PrefixPadding: 13,
@@ -89,6 +89,7 @@ func New(login string, pass string, team string, server string) *Client {
 		Pass:   pass,
 		Team:   team,
 		Server: server,
+		MFAToken: mfatoken,
 	}
 
 	cache, _ := lru.New(500)
