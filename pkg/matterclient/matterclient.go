@@ -26,6 +26,7 @@ type Credentials struct {
 	Team             string
 	Pass             string
 	Token            string
+	MFAToken	 string
 	CookieToken      bool
 	Server           string
 	NoTLS            bool
